@@ -23,10 +23,7 @@ html {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   margin: 0;
 }
 
@@ -55,12 +52,14 @@ body {
 }
 
 button {
+  background: none;
+  border: none;
   margin-right: 10px;
   cursor: pointer;
 }
 
 ul {
-  list-style-type: none;
+  list-style-type: disc;
   padding: 0;
   margin: 0;
 }
@@ -76,42 +75,58 @@ ul {
 }
 
 .clock {
-  font-size: 5em;
+  font-size: 115px;
 }
 
-.container .login_input {
+.login {
+  margin-bottom: 10px;
+}
+
+.login_input {
   appearance: none;
   background: none;
   border: none;
   color: white;
-  font-size: 36px;
+  font-size: 34px;
   border-bottom: 3px solid rgba(255, 255, 255, 0.8);
-  margin-bottom: 20px;
+  margin: 20px;
+
+  text-align: center;
 }
 
-.container .login_input::placeholder {
+.login_input::placeholder {
   color: white;
   opacity: 0.7;
 }
 
-.container .login_input:focus,
-.container .login_input:active {
+.login_input:focus,
+.login_input:active {
   outline: none;
 }
 
-.container .login {
-  margin-bottom: 30px;
+.greeting {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.todo_input {
+  text-align: center;
+  font-size: 25px;
 }
 
 .todo_list {
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 19px;
 }
 
 .quote {
   opacity: 0.7;
   transition: opacity 0.3s ease-in;
   font-style: italic;
-  font-size: 12px;
+  font-size: 13px;
   position: absolute;
   bottom: 25px;
   left: 25px;
@@ -121,12 +136,28 @@ ul {
   opacity: 1;
 }
 
+.quotation {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.author {
+  display: block;
+  text-align: end;
+}
+
 .weather {
   font-style: italic;
-  font-size: 12px;
+  font-size: 14px;
   position: absolute;
   top: 25px;
   right: 25px;
+  text-align: center;
+}
+
+.city {
+  display: block;
+  margin-bottom: 5px;
 }
 
 img {

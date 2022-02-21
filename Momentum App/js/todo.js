@@ -35,7 +35,7 @@ function paintToDo(newTodo) {
     //span.innerText = newTodo;  //13.span태그의 텍스트는(input의 value값이 들어있는 newTodo변수)
     span.innerText = newTodo.text;  //37.object의 text프로퍼티로
     const button = document.createElement("button");  //15.js에서 html element인 (삭제버튼이 될)button태그 만들기
-    button.innerText = "X";  //16.
+    button.innerText = "❌";  //16.
     button.addEventListener("click", deleteToDo);  //19.버튼 클릭하면 todo 삭제되도록
     li.appendChild(span);  //14.li태그 안에 자식태그로 span태그 넣기  [1강의]문제:todo를 지울 수 없다,새로고침하면 todo들 사라진다(저장돼있지 않아서)
     li.appendChild(button);  //17.li태그 안에 자식태그로 button태그 넣기
