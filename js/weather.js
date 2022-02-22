@@ -8,10 +8,11 @@ function onGeoOk(position) {  //4.
     fetch(url)
         .then((response) => response.json())
         .then((data) => {
-            const city = document.querySelector(".weather span:first-child");
-            const weather = document.querySelector(".weather span:last-child");
+            const city = document.querySelector(".city");
+            const icon = document.querySelector(".icon");
             city.innerText = data.name;
-            weather.innerText = data.weather[0].main;
+            const weatherIcon = data.weather[0].icon;
+            icon.src =  `http://openweathermap.org/img/wn/${weatherIcon}.png`;
         })  //8.url을 fetch한 후, 서버로부터 받은 response의 json을 얻은 후, 데이터에서 현재 장소이름과 날씨를 얻어서 html변경
 } //position매개변수에 js가 준 GeolocationPosition객체가 대입됨
 

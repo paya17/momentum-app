@@ -157,7 +157,13 @@ ul {
 
 .city {
   display: block;
-  margin-bottom: 5px;
+}
+
+.icon {
+  position: relative;
+  z-index: 1;
+  width: 47px;
+  height: 47px;
 }
 
 img {
