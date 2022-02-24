@@ -2,7 +2,6 @@
   display: none;
 }
 
-/* <Universal tags(공통적으로 적용되는)> */
 * {
   box-sizing: border-box;
 }
@@ -37,7 +36,7 @@ h3 {
 }
 
 body {
-  cursor: default; /*커서가 텍스트에 올라가도 텍스트커서로 바뀌지 않도록*/
+  cursor: default;
 
   background-size: cover;
   background-position: center center;
@@ -66,6 +65,24 @@ ul {
 
 ul {
   margin-top: 50px;
+}
+
+input {
+  background: none;
+  appearance: none;
+  border: 0;
+  font-size: 22px;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:focus,
+input:active {
+  outline: none;
 }
 
 .container {
@@ -174,22 +191,4 @@ img {
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
-}
-
-input {
-  background: none;
-  appearance: none;
-  border: 0;
-  font-size: 22px;
-  color: white;
-  border-bottom: 2px solid white;
-}
-
-input::placeholder {
-  color: white;
-}
-
-input:focus,
-input:active {
-  outline: none;
 }
